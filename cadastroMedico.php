@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="stylecadastro.css">
 </head>
 <body>
-    <p>Cadastro de Médico</p>
-
     <form action="dadosMedico.php" method="post">
+        <p>Cadastro de Médico</p>
         <label for="nome">Nome Completo:</label>
         <input type="text" id="nome" name="nome_completo" required><br><br>
         
