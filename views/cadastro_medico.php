@@ -53,6 +53,7 @@
             <input type="password" class="form-control" id="senha" name="senha" required>
         </div>
         <button type="submit" class="btn btn-primary">Cadastrar</button>
+        <p class="mt-3">Já tem uma conta? <a href="index.php?action=login_medico">Faça login</a>.</p>
     </form>
     </div>
 </body>

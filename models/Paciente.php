@@ -51,9 +51,9 @@ class Paciente {
         $conn = getConnection();
         $sql = "SELECT * FROM pacientes WHERE id = :id";
         $stmt = $conn->prepare($sql);
-        $stmt->execute([':id' => $id]);
+        $stmt->execute([':id' => (int)$id]);
         return $stmt->fetch();
-    }
+    }    
     
     public static function atualizar_paciente($dados) {
         $conn = getConnection();
