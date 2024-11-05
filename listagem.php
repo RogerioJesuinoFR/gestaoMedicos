@@ -26,7 +26,7 @@
 
                 <?php
                     include 'config.php';
-                    $buscar_cadastros = "SELECT * FROM paciente";
+                    $buscar_cadastros = "SELECT * FROM pacientes";
                     $query_cadastros = mysqli_query($connx, $buscar_cadastros);
 
                     while ($receber_cadastros = mysqli_fetch_array($query_cadastros)) {
@@ -34,7 +34,7 @@
                         $nome = $receber_cadastros['nome'];
                         $email = $receber_cadastros['email'];
                         $idade = $receber_cadastros['idade'];
-                        $cpf = $receber_cadastros['CPF'];
+                        $cpf = $receber_cadastros['cpf'];
                         $telefone = $receber_cadastros['telefone'];
                 ?>
 
@@ -44,7 +44,7 @@
                         <td><input type="text" name="nome" value="<?php echo $nome; ?>"></td>
                         <td><input type="email" name="email" value="<?php echo $email; ?>"></td>
                         <td><input type="number" name="idade" value="<?php echo $idade; ?>"></td>
-                        <td><input type="text" name="CPF" value="<?php echo $cpf; ?>"></td>
+                        <td><input type="text" name="cpf" value="<?php echo $cpf; ?>"></td>
                         <td><input type="text" name="telefone" value="<?php echo $telefone; ?>"></td>
                         <td><input type="submit" value="Editar"></td>
                     </form>
@@ -63,7 +63,7 @@
                         <td><input type="text" name="nome" required></td>
                         <td><input type="email" name="email" required></td>
                         <td><input type="number" name="idade" required></td>
-                        <td><input type="text" name="CPF" required></td>
+                        <td><input type="text" name="cpf" required></td>
                         <td><input type="text" name="telefone" required></td>
                         <td><input type="submit" value="Cadastrar"></td>
                     </form>
